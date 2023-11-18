@@ -10,6 +10,12 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
-    public DbSet<Hospede> Hospede { get; set; }
-    public DbSet<Reserva> Reserva { get; set; }
+    public DbSet<Hospede> Hospedes { get; set; }
+    public DbSet<Reserva> Reservas { get; set; }
+    public DbSet<Acomodacao> Acomodacoes { get; set; }
+    public DbSet<Endereco> Enderecos { get; set; }
+    public DbSet<Funcionario> Funcionarios { get; set; }
+
+    public DbSet<Notificacao> Notificacoes { get; set; }
+    public DbSet<Pousada> Pousadas { get; set; }
 }
