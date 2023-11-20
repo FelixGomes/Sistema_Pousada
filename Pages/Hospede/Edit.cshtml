@@ -1,0 +1,57 @@
+@page
+@model sistema_quinta_do_ypua.Pages_Hospede.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Hospede</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Hospede.Id" />
+            <div class="form-group">
+                <label asp-for="Hospede.Nome" class="control-label"></label>
+                <input asp-for="Hospede.Nome" class="form-control" />
+                <span asp-validation-for="Hospede.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hospede.Sobrenome" class="control-label"></label>
+                <input asp-for="Hospede.Sobrenome" class="form-control" />
+                <span asp-validation-for="Hospede.Sobrenome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hospede.Telefone" class="control-label"></label>
+                <input asp-for="Hospede.Telefone" class="form-control" />
+                <span asp-validation-for="Hospede.Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hospede.Email" class="control-label"></label>
+                <input asp-for="Hospede.Email" class="form-control" />
+                <span asp-validation-for="Hospede.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hospede.Cpf" class="control-label"></label>
+                <input asp-for="Hospede.Cpf" class="form-control" />
+                <span asp-validation-for="Hospede.Cpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hospede.QuantidadePessoas" class="control-label"></label>
+                <input asp-for="Hospede.QuantidadePessoas" class="form-control" />
+                <span asp-validation-for="Hospede.QuantidadePessoas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+

@@ -1,0 +1,81 @@
+@page
+@model sistema_quinta_do_ypua.Pages_Acomodacao.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Acomodacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.Titulo" class="control-label"></label>
+                <input asp-for="Acomodacao.Titulo" class="form-control" />
+                <span asp-validation-for="Acomodacao.Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.Descricao" class="control-label"></label>
+                <input asp-for="Acomodacao.Descricao" class="form-control" />
+                <span asp-validation-for="Acomodacao.Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.QtdeCamaSolteiro" class="control-label"></label>
+                <input asp-for="Acomodacao.QtdeCamaSolteiro" class="form-control" />
+                <span asp-validation-for="Acomodacao.QtdeCamaSolteiro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.QtdeCamaCasal" class="control-label"></label>
+                <input asp-for="Acomodacao.QtdeCamaCasal" class="form-control" />
+                <span asp-validation-for="Acomodacao.QtdeCamaCasal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.Amenidades" class="control-label"></label>
+                <input asp-for="Acomodacao.Amenidades" class="form-control" />
+                <span asp-validation-for="Acomodacao.Amenidades" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.Condicoes" class="control-label"></label>
+                <input asp-for="Acomodacao.Condicoes" class="form-control" />
+                <span asp-validation-for="Acomodacao.Condicoes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.HorarioCheckIn" class="control-label"></label>
+                <input asp-for="Acomodacao.HorarioCheckIn" class="form-control" />
+                <span asp-validation-for="Acomodacao.HorarioCheckIn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.HorarioCheckOut" class="control-label"></label>
+                <input asp-for="Acomodacao.HorarioCheckOut" class="form-control" />
+                <span asp-validation-for="Acomodacao.HorarioCheckOut" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Acomodacao.Disponibilidade" /> @Html.DisplayNameFor(model => model.Acomodacao.Disponibilidade)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.Valor" class="control-label"></label>
+                <input asp-for="Acomodacao.Valor" class="form-control" />
+                <span asp-validation-for="Acomodacao.Valor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acomodacao.FotosAcomodacao" class="control-label"></label>
+                <input asp-for="Acomodacao.FotosAcomodacao" class="form-control" />
+                <span asp-validation-for="Acomodacao.FotosAcomodacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+

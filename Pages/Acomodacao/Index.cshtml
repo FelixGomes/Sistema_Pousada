@@ -1,0 +1,96 @@
+@page
+@model sistema_quinta_do_ypua.Pages_Acomodacao.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].QtdeCamaSolteiro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].QtdeCamaCasal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].Amenidades)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].Condicoes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].HorarioCheckIn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].HorarioCheckOut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].Disponibilidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acomodacao[0].FotosAcomodacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Acomodacao) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdeCamaSolteiro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdeCamaCasal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amenidades)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Condicoes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioCheckIn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioCheckOut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disponibilidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FotosAcomodacao)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
