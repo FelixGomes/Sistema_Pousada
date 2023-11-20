@@ -3,9 +3,10 @@ namespace sistema_quinta_do_ypua.Models
 {
     public class Notificacao
     {
+        public int Id { get; set; }
         public string Mensagem { get; set; }
 
-        public string TipoNotificacao { get; set; }
+        public TipoNotificacao TipoNotificacao { get; set; }
 
         public Reserva Reserva { get; set; }
 
@@ -16,5 +17,13 @@ namespace sistema_quinta_do_ypua.Models
             //TODO logica
         }
 
+    }
+
+    public enum TipoNotificacao
+    {
+        ConfirmacaoReserva = 1,
+        SoliciatacaoPagamento = 2,
+        LembreteCheckIn = 3,
+        LembreteCheckOut = 4
     }
 }

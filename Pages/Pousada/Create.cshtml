@@ -1,0 +1,36 @@
+@page
+@model sistema_quinta_do_ypua.Pages_Pousada.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Pousada</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Pousada.NomePousada" class="control-label"></label>
+                <input asp-for="Pousada.NomePousada" class="form-control" />
+                <span asp-validation-for="Pousada.NomePousada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pousada.Email" class="control-label"></label>
+                <input asp-for="Pousada.Email" class="form-control" />
+                <span asp-validation-for="Pousada.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+

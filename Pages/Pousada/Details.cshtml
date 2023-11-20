@@ -1,0 +1,31 @@
+@page
+@model sistema_quinta_do_ypua.Pages_Pousada.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pousada</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pousada.NomePousada)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pousada.NomePousada)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pousada.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pousada.Email)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Pousada.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

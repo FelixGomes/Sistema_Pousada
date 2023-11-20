@@ -4,6 +4,13 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Enum NivelAcesso { get; set; }
+        public NivelAcesso NivelAcesso { get; set; }
+    }
+
+    public enum NivelAcesso
+    {
+        Admin = 1,
+        Gerente = 2,
+        Funcionario = 3
     }
 }
