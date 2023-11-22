@@ -34,49 +34,5 @@ namespace sistema_quinta_do_ypua.Models
         public int QuantidadePessoas { get; set; }
 
         // Métodos para atualizar Hóspede e enviar reserva
-
-        public void EnviarReserva()
-        {
-            //TODO Lógica pra enviar a reserva
-        }
-
-        public void AtualizarNomeHospede(String novoNome)
-        {
-            this.Nome = novoNome;
-        }
-        public void AtualizarSobrenomeHospede(String novoSobrenome)
-        {
-            this.Sobrenome = novoSobrenome;
-        }
-        public void AtualizarTelefone(string novoTelefone)
-        {
-            if (Telefone != novoTelefone)
-            {
-                this.Telefone = novoTelefone;
-            }
-        }
-
-        public void AtualizarCPF(string novoCPF)
-        {
-            //TODO implementar integração com classe validador de CPF.
-            if(Cpf != novoCPF)
-            {
-                this.Cpf = novoCPF;
-            }
-        }
-
-        public void AtualizarQuantidadePessoas(int novaQuantidade)
-        {
-            if(QuantidadePessoas != novaQuantidade && novaQuantidade > 0)
-            {
-                this.QuantidadePessoas = novaQuantidade;
-            }
-        }
-
-        public void AtualizarEmail(string novoEmail)
-        {
-            // TODO Lógica para validar e atualizar o e-mail
-            this.Email = novoEmail;
-        }
     }
 }

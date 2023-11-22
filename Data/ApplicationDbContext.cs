@@ -18,4 +18,5 @@ public class ApplicationDbContext : IdentityDbContext
 
     public DbSet<Notificacao> Notificacoe { get; set; }
     public DbSet<Pousada> Pousada { get; set; }
+    public DbSet<sistema_quinta_do_ypua.Models.Contato> Contato { get; set; }
 }
