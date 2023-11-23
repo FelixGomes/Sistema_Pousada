@@ -6,12 +6,14 @@ namespace sistema_quinta_do_ypua.Models
     public class Pousada
     {
         public int Id { get; set; }
+
+        [Display(Name = "Nome da Pousada")]
         public string NomePousada { get; set; }
 
+        [Display(Name = "Endereço")]
         public Endereco Endereco { get; set; }
 
-        [Required(ErrorMessage = "O email do hóspede é obrigatório", AllowEmptyStrings = false)]
-        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Informe um email válido...")]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
     }

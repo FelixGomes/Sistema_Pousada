@@ -2,14 +2,14 @@
 @model sistema_quinta_do_ypua.Pages_Acomodacao.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Acomodações";
 }
 
-<h1>Index</h1>
+<h1>Conheça Nossas Acomodações Disponíveis</h1>
 
-<p>
+@*<p>
     <a asp-page="Create">Create New</a>
-</p>
+</p>*@
 <table class="table">
     <thead>
         <tr>
@@ -36,9 +36,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Acomodacao[0].HorarioCheckOut)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Acomodacao[0].Disponibilidade)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Acomodacao[0].Valor)
@@ -77,19 +74,16 @@
                 @Html.DisplayFor(modelItem => item.HorarioCheckOut)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Disponibilidade)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Valor)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FotosAcomodacao)
             </td>
-            <td>
+            @*<td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+            </td>*@
         </tr>
 }
     </tbody>
