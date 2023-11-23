@@ -9,7 +9,7 @@ A equipe escolheu desenvolver uma solução para gerenciamento de hospedagem, vi
 
 Priorização da eficiência nos controles das reservas e hospedagens.
 
-Tecnologias Utilizadas no Desenvolvimento
+<h4>Tecnologias Utilizadas no Desenvolvimento</h4>
 
 
 Detalhes das tecnologias utilizadas, incluindo linguagem de programação, frameworks, banco de dados e interface de usuário.
