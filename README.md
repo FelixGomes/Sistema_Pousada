@@ -4,7 +4,7 @@
 Desenvolvimento de uma solução para simplificar os desafios de gerenciamento de hospedagem da Pousada da Quinta do Itapuã, evitando duplicidade de reservas e erros de agendamento.
 
 
-A equipe escolheu desenvolver uma solução para gerenciamento de hospedagem, visando simplificar os desafios atuais da Pousada da Quinta do Itapuã e evitar erros de reserva.
+A equipe escolheu desenvolver uma solução para gerenciamento de hospedagem, visando simplificar os desafios atuais da Pousada da Quinta do Ypuã e evitar erros de reserva.
 
 
 Priorização da eficiência nos controles das reservas e hospedagens.
